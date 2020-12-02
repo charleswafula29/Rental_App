@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:id="@+id/ParentLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/grey_underline"
+    android:paddingBottom="13dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="55dp"
+        android:layout_height="60dp"
+        android:padding="5dp"
+        android:src="@drawable/blue_payment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BillName"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/BillName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/bill_name"
+        android:paddingEnd="5dp"
+        android:lineSpacingMultiplier="1.2"
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/icon"
+        app:layout_constraintEnd_toStartOf="@+id/Amount"
+        tools:ignore="RtlSymmetry" />
+
+    <TextView
+        android:id="@+id/DueDate"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/due_date"
+        android:textColor="@color/GreyTextColor"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/BillName"
+        app:layout_constraintTop_toBottomOf="@+id/BillName" />
+
+    <TextView
+        android:id="@+id/Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/ksh"
+        android:textColor="@color/GreyTextColor"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/BillName" />
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/Status"
+        android:layout_width="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/status"
+        android:textColor="@color/GreyTextColor"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:paddingTop="3dp"
+        android:paddingBottom="3dp"
+        android:background="@drawable/grey_background"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@+id/BillName"
+        app:layout_constraintTop_toBottomOf="@+id/DueDate" />
+
+    <TextView
+        android:id="@+id/Pay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_blue_border"
+        android:fontFamily="@font/montserrat"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="3dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="3dp"
+        android:text="@string/pay"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/DueDate" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

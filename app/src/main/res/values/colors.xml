@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#04368E</color>
+    <color name="colorPrimaryDark">#00276B</color>
+    <color name="colorAccent">#00276B</color>
+    <color name="white">#FFFFFF</color>
+    <color name="blue">#00276B</color>
+    <color name="black">#000000</color>
+    <color name="GreyTextColor">#707070</color>
+    <color name="GreyTextColor2">#575656</color>
+    <color name="Transparent">@android:color/transparent</color>
+    <color name="GreyColor3">#F0F0F0</color>
+    <color name="Red">#D10D0D</color>
+    <color name="LightRed">#FFA7A7</color>
+    <color name="green">#2BB900</color>
+    <color name="Lightgreen">#B9FFA4</color>
+    <color name="GreyColor4">#72B6B6B6</color>
+    <color name="GreyColor5">#9C9C9C</color>
+    <color name="DarkGreyColor2">#5C5B5B</color>
+    <color name="color1">#00276B</color>
+    <color name="color2">#4DB9DD</color>
+    <color name="color3">#7A9DFF</color>
+    <color name="color4">#F2BA00</color>
+    <color name="Textfield">#E3E3E3</color>
+    <color name="TableTitle">#F7F9FF</color>
+    <color name="RowsColor">#F7F9FF</color>
+</resources>

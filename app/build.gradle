@@ -1,0 +1,101 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.fairmontsintenational.rentalapp"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.2'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    //volley
+    implementation 'com.android.volley:volley:1.1.1'
+
+    //gson library
+    implementation 'com.google.code.gson:gson:2.8.6'
+
+    //material edittext
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+
+    //paper
+    implementation 'io.paperdb:paperdb:2.6'
+
+    //material spinner
+    implementation 'com.jaredrummler:material-spinner:1.2.5'
+
+    //defaults
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+
+    //fcm
+    implementation 'com.google.firebase:firebase-messaging:20.3.0'
+
+    //circular imageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+    //Mpesa-Daraja
+    implementation 'com.androidstudy:daraja:1.0.2'
+
+    //lottie animations
+    implementation 'com.airbnb.android:lottie:3.4.0'
+
+    //Glide
+    implementation 'com.github.bumptech.glide:glide:4.11.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.11.0'
+
+    implementation 'com.github.yalantis:ucrop:2.2.2'
+
+    //material
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'com.google.android.material:material:1.3.0-alpha03'
+
+    //dexter permissions
+    implementation "com.karumi:dexter:5.0.0"
+
+    //on-boarding screen intro
+    implementation 'com.github.AppIntro:AppIntro:6.0.0'
+
+
+    //step view loader library
+    implementation 'com.params.stepview:stepview:1.0.2'
+
+    //navigation creator
+    implementation 'androidx.navigation:navigation-fragment:2.3.0'
+    implementation 'androidx.navigation:navigation-ui:2.3.0'
+
+    //photo viewer
+    implementation 'com.github.AgnaldoNP:PreviewImageCollection:1.2'
+    implementation 'com.github.chrisbanes:PhotoView:2.3.0'
+
+    //material nav bar
+    implementation 'com.ismaeldivita.chipnavigation:chip-navigation-bar:1.3.3'
+    implementation 'org.jetbrains.kotlin:kotlin-stdlib:1.3.72'
+
+    //date time picker
+    implementation 'com.github.BlackBoxVision:datetimepicker-edittext:v0.4.0'
+}

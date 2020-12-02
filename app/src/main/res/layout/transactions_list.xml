@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/date"
+        android:textColor="@color/GreyTextColor2"
+        android:textSize="15sp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <TextView
+        android:id="@+id/InvoiceNo"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/inv0000001"
+        android:textColor="@color/GreyTextColor2"
+        android:textSize="15sp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+    <TextView
+        android:id="@+id/Charged"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/charged_ksh"
+        android:textColor="@color/GreyTextColor2"
+        android:textSize="15sp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+
+    <TextView
+        android:id="@+id/Payment"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/payment_ksh"
+        android:textColor="@color/GreyTextColor2"
+        android:textSize="15sp"
+        android:paddingEnd="5dp"
+        android:paddingStart="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:lineSpacingMultiplier="1.2"/>
+
+
+</LinearLayout>

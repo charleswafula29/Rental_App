@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home"
+        android:title="@string/home"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+
+    <item
+        android:id="@+id/navigation_transactions"
+        android:icon="@drawable/ic_wallet"
+        android:title="@string/transactions"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+
+    <item
+        android:id="@+id/navigation_complaints"
+        android:icon="@drawable/black_complaint"
+        android:title="@string/complaint"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+
+    <item
+        android:id="@+id/navigation_my_account"
+        android:icon="@drawable/ic_user_icon"
+        android:title="@string/my_account"
+        app:cnb_iconColor="@color/white"
+        app:cnb_textColor="@color/white"
+        app:cnb_backgroundColor="@color/colorPrimary"
+        />
+</menu>

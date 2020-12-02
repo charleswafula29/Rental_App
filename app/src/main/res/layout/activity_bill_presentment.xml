@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".BillPresentment">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/ToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/bill_payment"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:paddingBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ToolBar">
+
+        <TextView
+            android:id="@+id/InvoiceNoTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/invoice_no"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/InvoiceNo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/inv0000001"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintBottom_toBottomOf="@+id/InvoiceNoTitle"
+            app:layout_constraintStart_toEndOf="@+id/InvoiceNoTitle"
+            app:layout_constraintTop_toTopOf="@+id/InvoiceNoTitle" />
+
+        <TextView
+            android:id="@+id/HouseIDTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/house_id"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/InvoiceNo" />
+
+        <TextView
+            android:id="@+id/HouseID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/inv0000001"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/HouseIDTitle"
+            app:layout_constraintStart_toEndOf="@+id/HouseIDTitle"
+            app:layout_constraintTop_toTopOf="@+id/HouseIDTitle" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/total_amount"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/HouseID" />
+
+        <TextView
+            android:id="@+id/Balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/ksh_5_000"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:layout_marginStart="10dp"
+            app:layout_constraintStart_toEndOf="@+id/textView4"
+            app:layout_constraintTop_toTopOf="@+id/textView4" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/Download"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="@string/choose_your_preferred_mode_of_payment"
+        android:textColor="@color/colorPrimary"
+        android:textSize="15sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout2" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@+id/Download">
+
+        <TextView
+            android:id="@+id/Card1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_border_button"
+            android:elevation="6dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/mpesa"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/Banks2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/material_login"
+            android:elevation="6dp"
+            android:fontFamily="@font/montserrat"
+            android:gravity="center"
+            android:padding="20dp"
+            android:text="@string/bank"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/MobileMoneyLayout"
+            android:paddingStart="15dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="15dp"
+            android:paddingBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/a_request_to_pay_will_be_sent_to_your_phone"
+                android:textColor="@color/GreyTextColor"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/Phone_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:layout_marginTop="12dp"
+                android:text="@string/phone_number"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+            <EditText
+                android:id="@+id/phone_number"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="12dp"
+                android:background="@drawable/grey_textfield"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/_0712345678"
+                android:inputType="phone"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/Phone_hint"
+                app:layout_constraintTop_toBottomOf="@+id/Phone_hint"
+                tools:ignore="Autofill" />
+
+            <TextView
+                android:id="@+id/Amount_hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:padding="5dp"
+                android:text="@string/amount"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/phone_number"
+                app:layout_constraintTop_toBottomOf="@+id/phone_number" />
+
+            <EditText
+                android:id="@+id/Amount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/grey_textfield"
+                android:fontFamily="@font/montserrat"
+                android:hint="@string/empty"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/phone_number"
+                app:layout_constraintStart_toStartOf="@+id/Phone_hint"
+                app:layout_constraintTop_toBottomOf="@+id/Amount_hint"
+                tools:ignore="Autofill" />
+
+            <Button
+                android:id="@+id/Pay"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_blue_button"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/send_money"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                app:layout_constraintEnd_toEndOf="@+id/Amount"
+                app:layout_constraintStart_toStartOf="@+id/Amount"
+                app:layout_constraintTop_toBottomOf="@+id/Amount" />
+
+            <ProgressBar
+                android:visibility="gone"
+                android:id="@+id/ProgressBar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:elevation="2dp"
+                android:layout_marginEnd="5dp"
+                android:indeterminate="true"
+                android:indeterminateTint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@+id/Pay"
+                app:layout_constraintEnd_toEndOf="@+id/Pay"
+                app:layout_constraintTop_toTopOf="@+id/Pay" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:visibility="gone"
+            android:id="@+id/BankLayout"
+            android:orientation="vertical"
+            android:paddingStart="25dp"
+            android:paddingTop="15dp"
+            android:paddingEnd="25dp"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:paddingBottom="10dp"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/stater"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:lineSpacingExtra="5dp"
+                android:text="@string/please_use_the_details_below_to_complete_your_payment_from_your_bank_of_choice"
+                android:textColor="@color/GreyTextColor"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/selectBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:layout_marginTop="8dp"
+                android:text="@string/select_bank"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                app:layout_constraintStart_toStartOf="@+id/stater"
+                app:layout_constraintTop_toBottomOf="@+id/stater" />
+
+            <com.jaredrummler.materialspinner.MaterialSpinner
+                android:id="@+id/BanksSpinner"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/montserrat"
+                android:gravity="start"
+                android:padding="5dp"
+                android:textColor="@color/black"
+                android:textColorHighlight="@color/black"
+                android:textColorHint="@color/black"
+                android:textSize="15sp"
+                app:layout_constraintEnd_toEndOf="@+id/stater"
+                app:layout_constraintStart_toStartOf="@+id/selectBank"
+                app:layout_constraintTop_toBottomOf="@+id/selectBank"
+                app:ms_background_color="@color/Textfield"
+                app:ms_background_selector="@drawable/spinner_underline" />
+
+            <TextView
+                android:id="@+id/Inst"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/montserrat"
+                android:text="@string/instructions"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:layout_marginTop="10dp"
+                app:layout_constraintStart_toStartOf="@+id/BanksSpinner"
+                app:layout_constraintTop_toBottomOf="@+id/BanksSpinner" />
+
+            <TextView
+                android:id="@+id/Note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/GreyColor3"
+                android:fontFamily="@font/montserrat"
+                android:lineSpacingMultiplier="1.4"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/follow_the_instructions_below_to_pay_using_the_selected_bank_above"
+                android:textColor="@color/GreyTextColor"
+                android:textSize="13sp"
+                app:layout_constraintEnd_toEndOf="@+id/BanksSpinner"
+                app:layout_constraintHorizontal_bias="0.1"
+                app:layout_constraintStart_toStartOf="@+id/Inst"
+                app:layout_constraintTop_toBottomOf="@+id/Inst" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
